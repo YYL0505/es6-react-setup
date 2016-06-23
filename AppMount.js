@@ -14,16 +14,26 @@ class AppMount extends React.Component {
         });
     }
 
+    //Invoked once, both on the client and server, immediately before the initial rendering occurs.
     componentWillMount() {
-        console.log('mounting');
+        this.setState({
+            m: 2,
+        });
     }
 
+    //Invoked once, only on the client (not on the server),
+    // immediately after the initial rendering occurs.
+    // At this point in the lifecycle,
+    // you can access any refs to your children
+    // (e.g., to access the underlying DOM representation).
+    // The componentDidMount() method of child components is invoked before that of parent components.
     componentDidMount() {
-        console.log('mounted');
+        this.inc = setInterval(this.update, 500);
     }
 
+    //Invoked immediately before a component is unmounted from the DOM.
     componentWillUnmount() {
-        console.log('bye');
+        clearInterval(this.inc);
     }
 
     render() {
