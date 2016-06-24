@@ -6,8 +6,9 @@ import AppMount from './AppMount'
 import AppLifeCycleUpdate from './AppLifeCycleUpdate'
 import AppHighOrder from './AppHighOrder'
 import AppComposableComponents from './AppComposableComponents'
+import AppDynamicallyGeneratedComponents from './AppDynamicallyGeneratedComponents'
 
 ReactDOM.render(
-    <AppComposableComponents />,
+    <AppDynamicallyGeneratedComponents />,
     document.getElementById('app')
 );
