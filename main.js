@@ -5,8 +5,9 @@ import AppProps from './AppProps'
 import AppMount from './AppMount'
 import AppLifeCycleUpdate from './AppLifeCycleUpdate'
 import AppHighOrder from './AppHighOrder'
+import AppComposableComponents from './AppComposableComponents'
 
 ReactDOM.render(
-    <AppHighOrder />,
+    <AppComposableComponents />,
     document.getElementById('app')
 );
