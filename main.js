@@ -4,8 +4,9 @@ import App from './App'
 import AppProps from './AppProps'
 import AppMount from './AppMount'
 import AppLifeCycleUpdate from './AppLifeCycleUpdate'
+import AppHighOrder from './AppHighOrder'
 
 ReactDOM.render(
-    <AppLifeCycleUpdate />,
+    <AppHighOrder />,
     document.getElementById('app')
 );
