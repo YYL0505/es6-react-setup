@@ -7,8 +7,9 @@ import AppLifeCycleUpdate from './AppLifeCycleUpdate'
 import AppHighOrder from './AppHighOrder'
 import AppComposableComponents from './AppComposableComponents'
 import AppDynamicallyGeneratedComponents from './AppDynamicallyGeneratedComponents'
+import AppJXS from './AppJXS'
 
 ReactDOM.render(
-    <AppDynamicallyGeneratedComponents />,
+    <AppJXS />,
     document.getElementById('app')
 );
